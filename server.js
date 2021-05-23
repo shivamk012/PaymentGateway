@@ -36,7 +36,7 @@ app.post('/orders' , (req,res)=>{
 });
 
 //server on 127.0.0.1:80
-const port = process.env.PORT;
+const port = process.env.PORT || 80;
 const host = '127.0.0.1';
 
 //server starts listening

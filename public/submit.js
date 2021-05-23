@@ -51,7 +51,15 @@ function solve(){
                     To: "shivamkoolwal14@gmail.com",
                     From: "shivamkoolwal20@gmail.com",
                     Subject: "Transaction Details",
-                    Body: "Hello", 
+                    Body: `Payment Successful<br/>
+                            Transaction Id : ${response.transaction_id}<br/>
+                            Amount : ${form_data.amount}<br/>
+                            Name : ${form_data.name}<br/>
+                            Number : ${phone_number}<br/>
+                            Date : ${today}<br/>
+                            Thank you for your generous gift to The Sparks Foundation. 
+                            We are thrilled to have your support. Through your donation we have been able to accomplish and continue working towards our goal to inspire students, help them innovate and let them integrate to build the next generation humankind.
+                            You truly make the difference for us, and we are extremely grateful!`, 
                   }).then(function (message) {
                       alert(`Payment Details Sent Succesfully to ${email.value}`);
                     });
