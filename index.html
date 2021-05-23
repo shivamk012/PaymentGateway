@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" href="/favicon.png">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <title>Donate Page</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="nav-bar" id="nav-bar">
+            <h1 style="font-family: 'Ubuntu' , sans-serif;">The Sparks Foundation</h1>
+            <div id="nav-bar-nav" >
+                <nav >
+                    <ul id="nav-bar-list">      
+                        <li class="nav-container"><a href="https://www.thesparksfoundationsingapore.org/about/vision-mission-and-values/" target="_blank">Home</a></li>
+                        <li class="nav-container"><a href="https://www.thesparksfoundationsingapore.org/contact-us/" target="_blank">Contact Us</a></li>
+                        <li class="nav-container"><a href="https://www.thesparksfoundationsingapore.org/programs/student-scholarship-program/" target="_blank">Programs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>  
+        <div class="main" id="main">
+            <P>Welcome to <span>Sparks Foundation!!!</span></P>
+            <P style="font-size: 6vh;"> “Happiness doesn't <span style="color:#235789;"> result from what we get, but from what we give.”</span></P>
+            <button type="button" id="pop-up-btn">Donate</button>
+        </div>
+        <div class="wrapper" id="form">
+            <div class="payment">
+              <div class="payment-logo">
+                <p>p</p>
+              </div>
+              
+              
+              <h2>Payment Gateway</h2>
+              <div class="form" id="donate-form">
+                <div class="card space icon-relative">
+                  <label class="label">Name:</label>
+                  <input type="text" class="input" placeholder="Full Name" id="names">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                  <label class="label">Amount:</label>
+                  <input type="text" class="input" placeholder="Amount" id="amount">
+                  <i class="far fa-credit-card"></i>
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Email:</label>
+                    <input type="text" class="input" placeholder="Email" id="email">
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Phone NUmber:</label>
+                    <input type="text" class="input" placeholder="Phone Number" id="number">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                </div>
+                  
+                <div class="btn" id="sub-btn">
+                  Pay
+                </div> 
+                
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="/submit.js"></script>
+
+</body>
+</html>
