@@ -1,4 +1,4 @@
-let btn = document.querySelector("#sub-btn");
+let btn = document.getElementById("sub-btn");
 let amount = document.querySelector('#amount');
 let names = document.querySelector('#names');
 let email = document.querySelector('#email');
@@ -8,11 +8,7 @@ btn.addEventListener('click' , solve);
 let pop_up_btn = document.querySelector('#pop-up-btn');
 pop_up_btn.addEventListener('click',open);
 
-let cancel = document.querySelector('#cancel-btn');
-cancel.addEventListener('click' , close);
-
 function solve(){
-    console.log(amount.value);
     let form_data = {
         amount : amount.value,
         name : names.value
@@ -94,21 +90,11 @@ function solve(){
 }
 
 function open(e){
-    e.preventDefault();
-    console.log(1);
-    document.getElementById('header').style.backgroundColor = 'white';
-    document.getElementById('form').style.display = 'block';
+    document.getElementById('form').style.display = 'flex';
+    document.getElementById('sub-btn').style.display = 'block';
     document.getElementById('nav-bar').style.display = 'none';
     document.getElementById('main').style.display = 'none';
     document.getElementById('header').style.display = 'flex';
     document.getElementById('header').style.justifyContent = 'center';
     document.getElementById('header').style.alignItems = 'center';
-}
-
-function close(e){
-    e.preventDefault();
-    document.getElementById('form').style.display = 'none';
-    document.getElementById('nav-bar').style.display = 'flex';
-    document.getElementById('main').style.display = 'block';
-    document.getElementById('header').style.display = 'block';
 }
